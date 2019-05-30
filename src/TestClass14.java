@@ -34,7 +34,36 @@ public class TestClass14 {
         System.out.println(a < b);
         System.out.println(a - 5 >= b);
         System.out.println(a == b); //сравнение на равенство
-        System.out.println(a != b); 
+        System.out.println(a != b);
+        System.out.println(a + 10 <= b + 15);
+        System.out.println(!(a + 10 <= b + 15));// ! - операция отрицания
+        System.out.println(!false);
+
+        System.out.println();
+        //инкремент и дикремент
+        int i = 0;
+        i++; // i = i + 1
+        System.out.println(i);
+        i--; // i = i - 1;
+        System.out.println(i);
+
+        System.out.println(i++); // вывод до операции, с учетом того что операция вывода выше видимо
+        System.out.println(i);
+
+        i = 3;
+        a = i++; //прибавление после присваивания
+        System.out.println(a);
+
+        i = 3;
+        a = ++i; //прибавление до присваивания
+        System.out.println(a);
+
+        //булевы операции
+        a = 10;
+        b = 20;
+
+        System.out.println(a > b || a < b); // || - ИЛИ
+        System.out.println(a > b || b > 30);
 
     }
 }
