@@ -68,5 +68,29 @@ public class TestClass14 {
         //тестовый пуш
         //еще один тестовый коммент, как мне его забрать из репы правильно ?
 
+        System.out.println(a > b && a < b); // && - И
+        System.out.println(a > 9 && b == 20);
+
+        a = 9;
+        System.out.println(Math.sqrt(a)); // Класс Math - для математических операций.
+        System.out.println(Math.pow(a , 3)); // pow - возведение в степень
+
+        //комбенированные операции
+        a = 10;
+        a = a + 5;
+        System.out.println(a);
+
+        a = 10;
+        a+=5; //комбинированные операции - сложение и присвоение(именно в таком порядке).
+        System.out.println(a);
+
+        a-=5;
+        System.out.println(a);
+        a*=2;
+        System.out.println(a);
+        a/=2;
+        System.out.println(a);
+        a%=3; // % - остаток от деления (еще разок)
+        System.out.println(a);
     }
 }
