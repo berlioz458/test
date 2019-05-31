@@ -65,5 +65,7 @@ public class TestClass14 {
         System.out.println(a > b || a < b); // || - ИЛИ
         System.out.println(a > b || b > 30);
 
+        //тестовый пуш
+
     }
 }
