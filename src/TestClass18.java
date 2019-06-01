@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List; // После появления в коде List класс сам импортнулся в класс
 
 public class TestClass18 {
@@ -73,5 +74,19 @@ public class TestClass18 {
         System.out.println(list.containsAll(list2));
         list.removeAll(list2);
         System.out.println(list.containsAll(list2));
+
+        System.out.println();
+        //19. Итератор - работать с элементами списка (коллейкции)
+        Iterator<Integer> iterator = list.iterator();
+        //iterator.next();//указываем на первый элемент
+        //System.out.println(iterator.next());
+        //System.out.println(iterator.next());
+        //hasNext - существует ли элемент в списке следующий
+        //System.out.println(iterator.hasNext());
+
+        // все значения списка на экран
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
