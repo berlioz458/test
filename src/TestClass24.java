@@ -4,7 +4,12 @@ public class TestClass24 {
         //ошибка возникающая во время работы программы
         //научимся обрабатывать такие ошибки
         dev(10, 2);
-        dev(10, 0);
+        try {
+            dev(10, 2);
+        }catch (ArithmeticException e){
+            e.printStackTrace();
+        }
+
     }
 
     /*public static void dev (int x, int y)
@@ -22,7 +27,12 @@ public class TestClass24 {
     }*/
 
     //другой вариант ловли
-    public static void dev(int x, int y) {
-        System.out.println("Dev = " + x / y); //будет тренироваться на делении на 0
+    public static void dev(int x, int y) throws ArithmeticException{ //указываем что метод можешь выкинуть исключение
+        if (y == 0){ //прописываем ситуацию на которую бросать исключение
+            throw new ArithmeticException("Cannot dev by zero!");
+        } else {
+            System.out.println("Dev = " + x / y); //будет тренироваться на делении на 0
+        }
+
     }
 }
