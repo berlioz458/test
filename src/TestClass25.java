@@ -44,8 +44,5 @@ public class TestClass25 {
         //как это может применяться
         String.format("New %s string", "string");//format - статичный метод класса String
         Math.sqrt(125); //sqrt - так же статичный методы вызываемый через класс Math
-
-        //
-
     }
 }
