@@ -1,6 +1,11 @@
 public class Car {
     //класс для урока 25
 
+    final static int var = 20; // статичная переменная класса, для урока 27, UPD: при указании модификатора final значение переменной нельзя изменить, только получить.
+    static void method(){ // если поставить final то его нельзя переопределить, далее будет разжевано.
+        System.out.println("Static method");
+    }
+
     public Car(){ // это вот конструктор, выполняется при создании объекта класса
         System.out.println("New car created");
     }

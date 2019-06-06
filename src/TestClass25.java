@@ -27,5 +27,25 @@ public class TestClass25 {
         System.out.println();
         Car car5 = new Car("Red", 2100,2000,5100);
         System.out.println(car5.color + " " + car5.height + " " + car5.width + " " + car5.lenght);
+        System.out.println();
+
+        // Урок 27. Модификаторы static и final
+        System.out.println(Car.var); //статичная переменная доступна через класс, метод тоже
+        //Car.var = 100;
+
+        System.out.println(car1.var);
+        System.out.println(car2.var);
+        System.out.println(car3.var);
+        System.out.println(car4.var);
+        //вывод в том что у нас статичная переменая одна на все созданные объекты.
+        //со статичным методом аналогично
+        Car.method();
+
+        //как это может применяться
+        String.format("New %s string", "string");//format - статичный метод класса String
+        Math.sqrt(125); //sqrt - так же статичный методы вызываемый через класс Math
+
+        //
+
     }
 }
