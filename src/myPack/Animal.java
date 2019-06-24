@@ -26,4 +26,8 @@ public class Animal {
         System.out.println("Zzzzz");
         var = 3;
     }
+
+    public void sound () {
+        System.out.println("Hello!");
+    }
 }

@@ -7,4 +7,9 @@ public class Cat extends Animal {
     public void feed(String feed){
         System.out.println("I'm like: " + feed);
     }
+
+    @Override // переопределение метода sound для класса котов
+    public void sound(){
+        System.out.println("mew mew mew");
+    }
 }
